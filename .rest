@@ -7,3 +7,32 @@ Content-Type: application/json
   "category": "Salary",
   "description": "Monthly salary"
 }
+
+###
+POST http://localhost:3000/api/transactions/add
+Content-Type: application/json
+
+{
+  
+    "type": "Expense",
+    "amount": "500",
+    "category": "Food",
+    "description": "Lunch at cafe"
+}
+
+###
+GET http://localhost:3000/api/transactions
+
+###
+DELETE http://localhost:3000/api/transactions/5
+
+###
+PUT http://localhost:3000/api/transactions/5
+Content-Type: application/json
+
+{
+    "type": "personal",
+    "amount": "1500",
+    "category": "clothes",
+    "description": "bought new jeans"
+}
