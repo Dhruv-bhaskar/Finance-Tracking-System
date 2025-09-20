@@ -1,5 +1,10 @@
+GET http://localhost:3000/
+
+###
 POST http://localhost:3000/api/transactions/add
 Content-Type: application/json
+Authorization: Bearer 
+ae739d27f00e41125746d6cda7c3e545633457081244afec
 
 {
   "type": "income",
@@ -7,6 +12,7 @@ Content-Type: application/json
   "category": "Salary",
   "description": "Monthly salary"
 }
+
 
 ###
 POST http://localhost:3000/api/transactions/add
